@@ -1,0 +1,251 @@
+  <footer id="footer" class="footer dark-background py-4">
+    <div class="container text-center">
+      <div class="d-flex justify-content-center gap-2">
+        <a href="resume.html" class="btn btn-outline-info"><i class="bi bi-file-earmark-person"></i> Voir le CV en ligne</a>
+        <a href="index.html" class="btn btn-outline-success"><i class="bi bi-house"></i> Voir Accueil</a>
+      </div>
+      <div class="copyright mt-3">
+        <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Lucas Dufay | Cyber Dark Theme</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Personal
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Updated: Mar 05 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-page">
+
+  <header id="header" class="header fixed-top" style="background:#181a1b;border-bottom:1px solid #222;">
+    <div class="container-xl d-flex align-items-center justify-content-between py-2">
+      <a href="index.html" class="logo d-flex align-items-center text-light" style="font-family:monospace;font-size:1.7em;letter-spacing:2px;">
+        <span style="color:#6cf;">&#9679;</span> <span style="margin-left:8px;">Portfolio</span>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul class="d-flex gap-4 mb-0" style="list-style:none;">
+          <li><a href="index.html" style="color:#6cf;font-family:monospace;">Accueil</a></li>
+          <li><a href="resume.html" style="color:#6cf;font-family:monospace;">CV</a></li>
+          <li><a href="portfolio.html" class="active" style="color:#fff;font-family:monospace;border-bottom:2px solid #6cf;">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Section animée d'intro -->
+    <section class="bg-dark text-light py-5 mb-4" style="background:linear-gradient(120deg,#232526 0%,#414345 100%);">
+      <div class="container text-center">
+        <h1 class="mb-3" style="font-weight:700;letter-spacing:1px;">Portfolio</h1>
+        <div class="typewriter-box mx-auto mb-2" style="max-width:600px;">
+          <pre id="typewriter" style="background:#222;border-radius:8px;padding:18px 24px;font-size:1.1em;color:#6cf;text-align:left;box-shadow:0 2px 16px #0002;min-height:56px;">&nbsp;</pre>
+        </div>
+        <p class="mb-0" style="color:#bbb;">BUT Réseaux & Télécoms — Projet SAÉ 1.04<br>Compétences, réalisations et synthèse académique</p>
+        <nav class="breadcrumbs d-flex justify-content-center mt-2">
+          <ol class="breadcrumb bg-transparent p-0 m-0">
+            <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+            <li class="breadcrumb-item active">Portfolio</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <script>
+    // Animation typewriter pour le code d'intro
+    const tw = document.getElementById('typewriter');
+    const lines = [
+      'Connexion à BUT Réseaux & Télécommunications - IUT Béthune... [OK]',
+      'Accès garanti.\n',
+      'const competences = ["Administrer", "Connecter", "Programmer", "Sécuriser", "Surveiller"];',
+      'for (let c of competences) {',
+      '    console.log("Compétence : " + c);',
+      '}',
+      '// Découvrez mes projets et réalisations ci-dessous !'
+    ];
+    let i = 0, j = 0, out = '', speed = 32;
+    function type() {
+      if (i < lines.length) {
+        if (j < lines[i].length) {
+          out += lines[i][j];
+          tw.innerHTML = out + '<span style="opacity:0.5;">|</span>';
+          j++;
+          setTimeout(type, speed);
+        } else {
+          out += '\n';
+          tw.innerHTML = out.replace(/\n/g,'<br>') + '<span style="opacity:0.5;">|</span>';
+          i++; j = 0;
+          setTimeout(type, 400);
+        }
+      } else {
+        tw.innerHTML = out.replace(/\n/g,'<br>');
+      }
+    }
+    if (tw) type();
+    </script>
+
+        <!-- Compétences PN R&T et parcours - dark cyber style -->
+        <div class="row g-4 mb-4 justify-content-center" style="background:#181a1b;padding:32px 0;">
+          <!-- Administrer -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0" style="background:#232526;color:#e0e0e0;border-radius:14px;box-shadow:0 2px 16px #0006;">
+              <div class="card-body p-4">
+                <div style="font-size:1.7em;color:#6cf;"><i class="bi bi-hdd-network"></i></div>
+                <h5 class="card-title mb-2" style="font-family:monospace;font-size:1.1em;">Administrer</h5>
+                <p class="card-text" style="font-size:0.98em;">Installer, configurer, maintenir et sécuriser des réseaux et des systèmes informatiques.<br><span class="text-muted small">(PN BUT RT)</span></p>
+                <a class="btn btn-outline-info btn-sm mt-2 disabled" style="font-family:monospace;pointer-events:none;opacity:0.7;">Projet : Configuration Cisco</a>
+              </div>
+            </div>
+          </div>
+          <!-- Connecter -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0" style="background:#232526;color:#e0e0e0;border-radius:14px;box-shadow:0 2px 16px #0006;">
+              <div class="card-body p-4">
+                <div style="font-size:1.7em;color:#6cf;"><i class="bi bi-plug"></i></div>
+                <h5 class="card-title mb-2" style="font-family:monospace;font-size:1.1em;">Connecter</h5>
+                <p class="card-text" style="font-size:0.98em;">Déployer des réseaux locaux/étendus, garantir l’accès et la qualité de service.<br><span class="text-muted small">(PN BUT RT)</span></p>
+                <a class="btn btn-outline-info btn-sm mt-2 disabled" style="font-family:monospace;pointer-events:none;opacity:0.7;">Projet : Mise en place VPN</a>
+              </div>
+            </div>
+          </div>
+          <!-- Programmer -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0" style="background:#232526;color:#e0e0e0;border-radius:14px;box-shadow:0 2px 16px #0006;">
+              <div class="card-body p-4">
+                <div style="font-size:1.7em;color:#6cf;"><i class="bi bi-code-slash"></i></div>
+                <h5 class="card-title mb-2" style="font-family:monospace;font-size:1.1em;">Programmer</h5>
+                <p class="card-text" style="font-size:0.98em;">Développer des scripts, applications et outils pour automatiser, superviser ou sécuriser les réseaux.<br><span class="text-muted small">(PN BUT RT)</span></p>
+                <a class="btn btn-outline-info btn-sm mt-2 disabled" style="font-family:monospace;pointer-events:none;opacity:0.7;">Projet : Site web personnel</a>
+              </div>
+            </div>
+          </div>
+          <!-- Sécuriser -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0" style="background:#232526;color:#e0e0e0;border-radius:14px;box-shadow:0 2px 16px #0006;">
+              <div class="card-body p-4">
+                <div style="font-size:1.7em;color:#6cf;"><i class="bi bi-shield-lock"></i></div>
+                <h5 class="card-title mb-2" style="font-family:monospace;font-size:1.1em;">Sécuriser</h5>
+                <p class="card-text" style="font-size:0.98em;">Mettre en œuvre des politiques de sécurité, auditer, surveiller et protéger les infrastructures.<br><span class="text-muted small">(PN BUT RT, Parcours Cyber)</span></p>
+                <a class="btn btn-outline-info btn-sm mt-2 disabled" style="font-family:monospace;pointer-events:none;opacity:0.7;">Projet : Audit de sécurité</a>
+              </div>
+            </div>
+          </div>
+          <!-- Surveiller -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0" style="background:#232526;color:#e0e0e0;border-radius:14px;box-shadow:0 2px 16px #0006;">
+              <div class="card-body p-4">
+                <div style="font-size:1.7em;color:#6cf;"><i class="bi bi-graph-up"></i></div>
+                <h5 class="card-title mb-2" style="font-family:monospace;font-size:1.1em;">Surveiller</h5>
+                <p class="card-text" style="font-size:0.98em;">Superviser l’état du réseau, analyser les performances, détecter les incidents.<br><span class="text-muted small">(PN BUT RT, Parcours ROM)</span></p>
+                <a class="btn btn-outline-info btn-sm mt-2 disabled" style="font-family:monospace;pointer-events:none;opacity:0.7;">Projet : Supervision réseau</a>
+              </div>
+            </div>
+          </div>
+        </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Tous les blocs isotope (App, Product, Branding, Books) ont été supprimés. Seules les compétences PN R&T sont présentées ci-dessous. -->
+
+  </main>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container">
+        <!-- Synthèse IUT -->
+        <div class="mb-5">
+          <div class="card bg-dark text-white mb-3">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <span><strong>Synthèse</strong> <small class="fst-italic">(Moyennes par UE - IUT de Béthune, BUT Réseaux & Télécoms)</small></span>
+              <span class="badge bg-primary">2025-2026</span>
+            </div>
+            <div class="card-body p-2">
+              <div class="row g-2">
+                <div class="col-md-4">
+                  <div class="bg-primary text-white rounded p-2 mb-2">
+                    <div class="d-flex justify-content-between"><span><strong>UE11</strong> - Administrer les réseaux et l’Internet</span><span><strong>Moyenne :</strong> 11.81</span></div>
+                    <div class="small">Rang : 39 / 57</div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="bg-primary text-white rounded p-2 mb-2">
+                    <div class="d-flex justify-content-between"><span><strong>UE12</strong> - Connecter les entreprises et les usagers</span><span><strong>Moyenne :</strong> 10.41</span></div>
+                    <div class="small">Rang : 46 / 57</div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="bg-primary text-white rounded p-2 mb-2">
+                    <div class="d-flex justify-content-between"><span><strong>UE13</strong> - Créer des outils et applications informatiques pour les RT</span><span><strong>Moyenne :</strong> 10.84</span></div>
+                    <div class="small">Rang : 47 / 57</div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-end small fst-italic mt-1">La moyenne des ressources dans une UE dépend des poids donnés aux évaluations.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /Portfolio Section -->
+
+    <!-- Bloc Personal tout en bas de page -->
+    <div class="container my-5">
+      <div class="card bg-dark text-white text-center py-4" style="border-radius:18px;box-shadow:0 2px 16px #0006;">
+        <h1 class="display-4 fw-bold" style="color:#6cf;">Personal</h1>
+        <p>Portfolio étudiant — BUT Réseaux & Télécoms<br>Objectif : valoriser mes compétences et projets, faciliter le contact et la découverte de mon parcours.</p>
+        <div class="d-flex justify-content-center mb-3 gap-2">
+          <a href="resume.html" class="btn btn-outline-info"><i class="bi bi-file-earmark-person"></i> Voir le CV en ligne</a>
+          <a href="index.html" class="btn btn-outline-success"><i class="bi bi-house"></i> Voir Accueil</a>
+        </div>
+        <div class="social-links d-flex justify-content-center mb-2 gap-2">
+          <a href="https://github.com/lucasdufay667-hash" target="_blank" class="btn btn-outline-light rounded-circle" title="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/lucas-dufay-9b0383391/" target="_blank" class="btn btn-outline-info rounded-circle" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- Scripts JS -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+
+</html>
